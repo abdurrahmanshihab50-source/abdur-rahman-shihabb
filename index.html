@@ -3,77 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Personal portfolio of Abdur Rahman Shihab">
-<title>Abdur Rahman Shihab | Portfolio</title>
+
+<title>Abdur Rahman Shihab | Personal Portfolio</title>
+
+<meta name="description" content="Welcome to the personal portfolio of Abdur Rahman Shihab, a student exploring technology and creativity.">
+
+<meta name="theme-color" content="#050510">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <h2 class="logo">SHIHAB<span>.</span></h2>
+<div id="loader" class="loader">
+    <h2>SHIHAB<span>.</span></h2>
+    <p>Loading my universe...</p>
+</div>
 
-    <nav>
+<header class="header">
+    <a href="#home" class="logo">SHIHAB<span>.</span></a>
+
+    <button id="menuBtn" class="menu-btn"
+    aria-label="Toggle navigation">☰</button>
+
+    <nav id="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#journey">Journey</a>
+        <a href="#goals">Goals</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <button id="themeBtn" class="theme-btn"
+    aria-label="Toggle theme">☀️</button>
 </header>
 
+<main>
+
 <section id="home" class="hero">
-    <p class="welcome">WELCOME TO MY DIGITAL WORLD</p>
+    <div class="hero-content">
 
-    <h1>Hi, I'm <span>Abdur Rahman Shihab</span></h1>
+        <p class="eyebrow">WELCOME TO MY DIGITAL WORLD</p>
 
-    <h2>I'm a Student</h2>
+        <h1>Hello, I'm</h1>
 
-    <p>
-        Learning new things, exploring technology
-        and building my future.
-    </p>
+        <h1 class="neon-name">
+            Abdur Rahman Shihab
+        </h1>
 
-    <a href="#about" class="btn">Explore More</a>
+        <h2>I'm a <span id="typing">Student</span></h2>
+
+        <p class="hero-text">
+            A student exploring technology, creativity
+            and the endless possibilities of the digital world.
+            Every journey begins with a first step.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn">Explore More</a>
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+        </div>
+
+        <p class="live-time">
+            Local Time: <span id="clock">Loading...</span>
+        </p>
+
+    </div>
+
+    <div class="hero-circle">
+        <div class="circle-inner">SH</div>
+    </div>
 </section>
 
 <section id="about" class="section">
+    <p class="eyebrow">GET TO KNOW ME</p>
     <h2>About <span>Me</span></h2>
-    <p>
-        I am Abdur Rahman Shihab.
-        I am a student who loves technology,
-        creativity and learning new things.
-        This website is my personal digital space.
-    </p>
+
+    <div class="glass-card">
+        <h3>Who Am I?</h3>
+        <p>
+            My name is Abdur Rahman Shihab.
+            I am a student and currently at the beginning
+            of my learning journey.
+            I enjoy exploring technology, discovering
+            new ideas and learning new things.
+        </p>
+        <p>
+            This website represents my personal space
+            and my journey of learning and creativity.
+        </p>
+    </div>
 </section>
 
 <section id="journey" class="section">
-    <h2>My <span>Journey</span></h2>
-    <p>
-        Every expert was once a beginner.
-        This is the beginning of my journey.
-    </p>
+    <p class="eyebrow">MY STORY</p>
+    <h2>My Learning <span>Journey</span></h2>
+
+    <div class="glass-card">
+        <h3>Every Expert Was Once a Beginner</h3>
+        <p>
+            I am starting with the basics and looking
+            forward to discovering more about technology.
+        </p>
+        <div class="timeline">
+            <p>01 — Exploring Technology</p>
+            <p>02 — Starting Web Development</p>
+            <p>03 — Building My First Website</p>
+            <p>04 — Learning and Improving</p>
+        </div>
+    </div>
 </section>
 
-<section class="section">
-    <h2>My <span>Goals</span></h2>
-    <p>
-        Learn HTML, CSS, JavaScript and
-        explore the world of web development.
-    </p>
+<section id="goals" class="section">
+    <p class="eyebrow">LOOKING FORWARD</p>
+    <h2>My Future <span>Goals</span></h2>
+
+    <div class="card-grid">
+        <div class="glass-card">
+            <h3>Learn HTML</h3>
+            <p>Understand website structure.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Learn CSS</h3>
+            <p>Explore creative web design.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Learn JavaScript</h3>
+            <p>Discover interactive websites.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Explore GitHub</h3>
+            <p>Learn version control and publishing.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <p class="eyebrow">MY WORKSPACE</p>
+    <h2>My <span>Projects</span></h2>
+
+    <div class="glass-card">
+        <h3>Personal Portfolio</h3>
+        <p>
+            My first personal website, created to document
+            my learning journey and explore web development.
+        </p>
+        <span class="project-tag">Learning Project</span>
+    </div>
 </section>
 
 <section id="contact" class="section">
+    <p class="eyebrow">LET'S CONNECT</p>
     <h2>Contact <span>Me</span></h2>
-    <p>Thank you for visiting my website!</p>
-    <a href="mailto:your-email@example.com" class="btn">
-        Email Me
-    </a>
+
+    <div class="glass-card">
+        <p>
+            Thank you for visiting my personal portfolio.
+            I hope you enjoyed exploring my digital world.
+        </p>
+
+        <a href="mailto:YOUR_EMAIL@example.com"
+        class="btn">Send an Email</a>
+    </div>
 </section>
 
+</main>
+
 <footer>
-    <p>© 2026 Abdur Rahman Shihab. All Rights Reserved.</p>
+    <h3>SHIHAB<span>.</span></h3>
+    <p>Learning Today, Building Tomorrow.</p>
+    <p>© 2026 Abdur Rahman Shihab</p>
 </footer>
+
+<button id="topBtn" aria-label="Back to top">↑</button>
 
 <script src="js/main.js"></script>
 
